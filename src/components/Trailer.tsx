@@ -1,6 +1,6 @@
 "use client";
 
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 
 interface Medium {
   id: number;
@@ -18,7 +18,7 @@ export default function Trailer({ media }: Props) {
 
   return (
     <div className="aspect-video mb-8">
-      <ReactPlayer url={video.url} width="100%" height="100%" controls />
+      {/* <ReactPlayer url={video.url} width="100%" height="100%" controls /> */}
     </div>
   );
 }

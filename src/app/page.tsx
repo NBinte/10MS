@@ -62,15 +62,15 @@ export default async function Page() {
             <Title title={data?.data?.title} />
             <Description html={data?.data?.description} />
             <Instructors sections={sections} />
-            <CourseLayout data={data} />
-            <LearningOutcomes data={data} />
-            <ExclusiveFeatures data={data} />
-            <CourseDetails data={data} />
+            {/* <CourseLayout data={data?.data} />
+            <LearningOutcomes data={data?.data} />
+            <ExclusiveFeatures data={data?.data} />
+            <CourseDetails data={data?.data} /> */}
           </div>
 
           {/* Right Column */}
           <div className="space-y-6">
-            <Trailer media={data?.data?.media} />
+            {/* <Trailer media={data?.data?.media} /> */}
             <CTA text={data?.data?.cta_text?.name} />
             <CheckList checklist={data?.data?.checklist} />
           </div>

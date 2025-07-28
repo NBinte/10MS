@@ -3,10 +3,10 @@ export interface Medium {
   type: string;
 }
 
-export interface CtaText {
-  name: string;
-  value: string;
-}
+// export interface CtaText {
+//   name: string;
+//   value: string;
+// }
 
 export interface Checklist {
   text: string;
@@ -21,6 +21,7 @@ export interface Instructor {
 }
 
 export interface Section {
+  values: any;
   id: number;
   type: string;
   title?: string;
@@ -37,6 +38,7 @@ export interface Seo {
 
 export interface Data {
   data: {
+    cta_text: any;
     slug: string;
     id: number;
     title: string;
@@ -46,5 +48,4 @@ export interface Data {
     seo: Seo;
     sections: Section[];
   };
-  cta_text: CtaText;
 }
